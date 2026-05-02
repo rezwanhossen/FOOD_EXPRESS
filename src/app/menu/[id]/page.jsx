@@ -47,7 +47,6 @@ const DetailsPage = async ({ params }) => {
   return (
     <main className="min-h-screen bg-white">
       <div className="container mx-auto px-6 py-32">
-        {/* Navigation Back */}
         <Link
           href="/menu"
           className="inline-flex items-center gap-2 text-gray-500 hover:text-orange-500 transition-colors mb-10 font-bold text-sm uppercase tracking-widest"
@@ -56,7 +55,6 @@ const DetailsPage = async ({ params }) => {
         </Link>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* LEFT: Image Section */}
           <div className="relative">
             <div className="relative h-[400px] md:h-[600px] w-full rounded-[3.5rem] overflow-hidden shadow-2xl shadow-orange-500/10 border-8 border-gray-50">
               <img

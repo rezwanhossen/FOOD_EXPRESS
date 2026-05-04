@@ -1,6 +1,7 @@
 import React from "react";
-import { ShoppingCart, Eye, Star } from "lucide-react";
+import { Eye, Star } from "lucide-react";
 import Link from "next/link";
+import MenuCartButton from "../buutton/MenuCartButton";
 
 const FoodCard = ({ food }) => {
   return (
@@ -42,9 +43,7 @@ const FoodCard = ({ food }) => {
           >
             <Eye size={16} /> Details
           </Link>
-          <button className="flex items-center justify-center gap-2 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-bold text-xs transition-all shadow-lg shadow-orange-500/20 active:scale-95 whitespace-nowrap">
-            <ShoppingCart size={16} /> Add
-          </button>
+          <MenuCartButton food={food} />
         </div>
       </div>
     </div>

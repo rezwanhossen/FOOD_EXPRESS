@@ -1,5 +1,6 @@
-import React from "react";
-import { ShoppingCart, User, Menu } from "lucide-react";
+"use client";
+import React, { use } from "react";
+import { User, Menu } from "lucide-react";
 import Link from "next/link";
 
 const Navbar = ({ userImage = null }) => {
@@ -45,13 +46,6 @@ const Navbar = ({ userImage = null }) => {
         </div>
 
         <div className="flex items-center space-x-5">
-          <button className="relative text-black hover:text-orange-500 transition-colors">
-            <ShoppingCart size={22} />
-            <span className="absolute -top-2 -right-2 bg-orange-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center border border-white/20">
-              0
-            </span>
-          </button>
-
           <div className="relative">
             {userImage ? (
               <>

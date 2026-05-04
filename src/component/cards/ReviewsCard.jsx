@@ -72,9 +72,7 @@ const ReviewsCard = ({ review }) => {
         </p>
       </div>
 
-      {/* Bottom Section */}
       <div className="flex items-center justify-between pt-6 border-t border-gray-100 mt-auto">
-        {/* Likes Avatar */}
         <div className="flex -space-x-2">
           {review.likes?.slice(0, 3).map((likeEmail, i) => (
             <div
@@ -92,7 +90,6 @@ const ReviewsCard = ({ review }) => {
           )}
         </div>
 
-        {/* Like Button */}
         <button
           onClick={handleLike}
           className={`flex items-center gap-2 px-5 py-2.5 rounded-2xl font-black text-xs shadow-sm transition-all duration-300 active:scale-95
